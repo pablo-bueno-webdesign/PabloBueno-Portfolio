@@ -95,6 +95,10 @@ body {
             }
         }
         .Hero-jobs {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
             justify-self: start;
             line-height: 1.3;
             padding-bottom: 14px; 
