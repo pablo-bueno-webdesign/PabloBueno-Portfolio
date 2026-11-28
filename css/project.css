@@ -1,0 +1,93 @@
+
+/* Projects detailed */
+
+.ProjectDetails {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+
+    padding: 1rem;
+
+    .Project-style {
+        background: var(--white-primary-50);
+        border: solid 1px var(--white-primary);
+        -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(9px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: var(--border-radius-xl);
+        padding: 1rem;  
+    }
+
+    .ProjectData {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem; 
+
+        width: calc(45% - 1rem);
+        .ProjectData-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 1.5rem; 
+        }
+        .ProjectData-BackButton {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            color: var(--accent-color);
+        }
+        .ProjectData-title{
+            font-size: var(--font-size-heading);
+            font-weight: 500;
+        }
+        .ProjectData-description-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .ProjectData-descriptionTitle {
+                font-size: var(--font-size-title);
+                font-weight: 500;
+            }
+            .ProjectData-decription {
+                font-size: var(--font-size-s);
+                line-height: var(--line-height-text);
+                font-weight: 400;
+                width: 90%;
+                .description-text {
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .ProjectMetadata {
+        display: flex;
+        gap: 2.5rem;
+        .meta-title-style {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-xs);
+            color: var(--black-secondary);
+        }
+        .meta-text-style {
+            font-size: var(--font-size-s);
+        }
+    }
+    
+    .ProjectGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        width: calc(55% - 1rem);
+        .ProjectGallery-img {
+            background-color: lightseagreen;
+            border-radius: var(--border-radius-md);
+            min-height: 300px;
+            object-fit: cover;
+        }
+        .main-img {
+            grid-column: span 2;
+        }
+    }
+}
